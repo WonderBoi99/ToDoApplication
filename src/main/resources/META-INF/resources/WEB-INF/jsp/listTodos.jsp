@@ -1,12 +1,29 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <html>
-<head>
-<meta charset="UTF-8">
-<title>ToDo - ToDos Page</title>
-</head>
-<body>
-	<h2> Your Todos are ${tasks}</h2>
-</body>
+	<body>
+		<div>
+			<h1>Your Todos</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>Description</th>
+						<th>Target Date</th>
+						<th>Is Done?</th>
+					</tr>
+				</thead>
+				<tbody>		
+					<c:forEach items="${todos}" var="todo">
+						<tr>
+							<td>${todo.id}</td>
+							<td>${todo.task}</td>
+							<td>${todo.dueDate}</td>
+							<td>${todo.completed}</td>
+						</tr>
+					</c:forEach> 
+				</tbody>
+			</table>
+		</div>
+		
+	</body>
 </html>

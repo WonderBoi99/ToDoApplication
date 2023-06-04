@@ -7,7 +7,10 @@
 		<title>ToDo - Welcome Page</title>
 	</head>
 	<body>
-		<h1> Welcome ${firstName}, good plan = low stress :)</h1>
+		<h1> Welcome ${name}, good plan = low stress :)</h1>
+		<div>
+			<a href="list-todos"> Go To Your Todos</a>
+		</div>
 	
 	</body>
 </html>
