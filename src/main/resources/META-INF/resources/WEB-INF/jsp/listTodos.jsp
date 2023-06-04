@@ -23,6 +23,7 @@
 					</c:forEach> 
 				</tbody>
 			</table>
+			<a href="add-todo" class="btn">Add Todo</a>
 		</div>
 		
 	</body>
